@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+  display:inline-block;
+}
+</style>
+</head>
+<body>
+  <div id="num1"></div>
+  +
+  <div id="num2"></div>
+  =
+  <input id="res" size="4">
+  <br>
+  <input type="button" value="判卷" onclick="f()">
+  <div id="msg"></div>
+ <script type="text/javascript">
+ 	var x=parseInt(Math.random()*11);
+ 	var y=parseInt(Math.random()*11);
+ 	num1.innerText=x;
+ 	num2.innerText=y;
+ 	function f(){
+ 		if(res.value==x+y){
+ 			msg.innerText="100分！";
+ 		}else{
+ 			msg.innerText="100分！";
+ 		}
+ 	}
+ </script>
+</body>
+</html>

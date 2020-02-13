@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#all{
+  width: 170px;
+  height: 190px;
+  background-color: red;
+}
+.s1{
+  width: 85px;
+  height: 30px;
+  float: left;
+}
+.s2{
+  width: 85px;
+  height: 30px;
+  float: left;
+}
+.b1{
+  width: 170px;
+  height: 160px;
+  float: left;
+}
+#i1{
+  background-image: url("img/redhua.png");
+}
+#i2{
+   background-image: url("img/grayhua.png");
+   display: none;
+}
+#i3{
+    background-image: url("img/redji.png");
+    display: none;
+}
+#i4{
+    background-image: url("img/grayji.png");
+}
+#i5{
+    background-image: url("img/tabhua.png");
+}
+#i6{
+    background-image: url("img/tabji.png");
+    display: none;
+}
+</style>
+</head>
+<body>
+<div id="all">
+  <div class="s1" id="i1"></div>
+  <div class="s1" id="i2" onmousedown="downfn1()"></div>
+  <div class="s2" id="i3"></div>
+  <div class="s2" id="i4" onmousedown="downfn()"></div>
+  <div class="b1" id="i5"></div>
+  <div class="b1" id="i6"></div>
+</div>
+<script type="text/javascript">
+	function downfn(){
+		i4.style.display = "none";
+		i3.style.display = "block";
+		i1.style.display = "none";
+		i2.style.display = "block";
+		i5.style.display = "none";
+		i6.style.display = "block";
+	}
+	function downfn1(){
+		i3.style.display = "none";
+		i4.style.display = "block";
+		i2.style.display = "none";
+		i1.style.display = "block";
+		i6.style.display = "none";
+		i5.style.display = "block";
+	}
+</script>
+</body>
+</html>
